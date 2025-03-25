@@ -1,6 +1,7 @@
 services:
   app:
     image: node:alpine
+    restart: always
     ports:
       - ${PORT:-3000}:${PORT:-3000}
     volumes:
